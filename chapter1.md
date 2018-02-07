@@ -1,8 +1,8 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
-attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+title: Insert the chapter title here
+description: >-
+  Insert the chapter description here
+
 
 ---
 ## A really bad movie
@@ -38,6 +38,7 @@ library(ggplot2)
 ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
 ```
 
+
 `@sct`
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
@@ -46,6 +47,8 @@ msg_bad <- "That is not correct!"
 msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
+
+
 
 ---
 ## More movies
@@ -81,7 +84,6 @@ movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c
 # Clean up the environment
 rm(Movies)
 ```
-
 `@sample_code`
 ```{r}
 # movie_selection is available in your workspace
@@ -93,9 +95,7 @@ rm(Movies)
 
 
 # Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-
 ```
-
 `@solution`
 ```{r}
 # movie_selection is available in your workspace
@@ -109,7 +109,6 @@ good_movies <- movie_selection[movie_selection$Rating >= 5, ]
 # Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
 plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
 ```
-
 `@sct`
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
@@ -128,3 +127,31 @@ test_error()
 
 success_msg("Good work!")
 ```
+
+
+
+---
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: 24b716a5fc
+```
+
+test
+
+`@instructions`
+
+
+`@hint`
+
+
+
+
+
+
+
+
